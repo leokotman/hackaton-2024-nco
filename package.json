@@ -6,9 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "npx stylelint '**/*.css' --fix"
   },
   "devDependencies": {
     "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "stylelint": "^16.9.0",
+    "stylelint-config-standard": "^36.0.1"
   }
 }
