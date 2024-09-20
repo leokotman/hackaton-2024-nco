@@ -26,5 +26,7 @@ Online hackathon 2024 creator - Natalia Davydova (https://t.me/natti_jun_front)
 2. create a feature branch and switch to it, f.e. with git checkout -b: `git checkout -b feature/create-header`
 3. do your work
 4. run `yarn lint` to lint the files and autofix the errors. If there are some errors left after that in the console - fix them manually. We use stylelint default rules, that can be found here: https://stylelint.io/user-guide/rules/
-5. make a commit, and push the branch to the repo (`git push --set-upstream origin feature/do-smth` - this message appears when you try to `git push` your new branch for the first time, just copy-paste it to the console)
-6. create a pull request your-branch -> main.
+5. make a commit
+6. rebase your branch from the latest main `git switch main` , `git pull --rebase`, `git switch feature/create-header`, `git rebase main`
+7. and push the branch to the repo (`git push` or `git push --set-upstream origin feature/do-smth` - this message appears when you try to `git push` your new branch for the first time, just copy-paste it to the console)
+8. create a pull request your-branch -> main.
