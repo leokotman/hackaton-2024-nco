@@ -6,9 +6,18 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint:stylelint": "npx stylelint '**/*.css' --fix",
+    "lint:prettier": "prettier --write .",
+    "lint": "yarn lint:stylelint && yarn lint:prettier"
   },
   "devDependencies": {
+    "prettier": "3.3.3",
     "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "stylelint": "^16.9.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-prettier": "^5.0.2"
   }
 }
