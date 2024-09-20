@@ -14,6 +14,8 @@ Online hackathon 2024 creator - Natalia Davydova (https://t.me/natti_jun_front)
 1. clone the repository
 2. run `yarn` to install locally the necessary dependencies
 3. run `yarn dev` to run the server, open http://localhost:5173/ in your browser (the URL will be written in the console after the successful server startup)
+4. Install **Prettier** extension
+5. Open VSCode settings -> search for 'format on save', enable it; 'default formatter' -> 'Prettier - Code Formatter'
 
 ## Development
 
