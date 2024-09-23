@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.pnp.loader.mjs
+.pnp.cjs
+.yarn/install-state.gz
