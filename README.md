@@ -1,6 +1,10 @@
 # HACKATHON 2024 for NCO
 
-Team members:
+## See the app:
+
+https://hackaton-2024-nco.vercel.app/
+
+## Team members:
 
 1. Leo - team/tech lead;
 2. Alena - junior frontend developer;
