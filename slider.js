@@ -1,5 +1,8 @@
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import { Swiper } from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const imagesJsonFromApi = await fetch(
   'https://jsonplaceholder.typicode.com/photos'
@@ -11,6 +14,7 @@ const imagesToUse = imagesJsonFromApi.slice(0, 20);
 imagesToUse.unshift({ url: '/assets/images/cat.jpg' });
 
 export const swiper = new Swiper('.my-swiper', {
+  modules: [Navigation, Pagination],
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
