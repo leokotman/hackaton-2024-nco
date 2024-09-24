@@ -8,7 +8,7 @@ const imagesJsonFromApi = await fetch(
   .then(json => json);
 
 const imagesToUse = imagesJsonFromApi.slice(0, 20);
-imagesToUse.unshift({url: '/assets/images/cat.jpg'});
+imagesToUse.unshift({ url: '/assets/images/cat.jpg' });
 
 export const swiper = new Swiper('.my-swiper', {
   pagination: {
@@ -36,6 +36,8 @@ export const swiper = new Swiper('.my-swiper', {
 
 swiper.height = 300;
 const sliderWrapper = document.querySelector('.swiper-wrapper');
-sliderWrapper.innerHTML = imagesToUse.map(image => {
-  return `<div class="swiper-slide"><img class="custom-img" src=${image.url} /></div>`;
-}).join('');
+sliderWrapper.innerHTML = imagesToUse
+  .map(image => {
+    return `<div class="swiper-slide"><img class="custom-img" src=${image.url} /></div>`;
+  })
+  .join('');
