@@ -360,12 +360,6 @@ q::after {
 
 /* Swiper ends */
 
-/* styles for content: each block has the same width, centered  */
-.content-container {
-  max-width: 70%;
-  margin: 0 auto;
-}
-
 /* Cards Price */
 .card__price {
   border: 1px solid var(--gray-700);
