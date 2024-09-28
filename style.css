@@ -88,6 +88,14 @@ h6 {
   text-wrap: balance;
 }
 
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: var(--secondary-font-family);
+  color: var(--gray-700);
+}
+
 ul,
 ol,
 li {
@@ -184,7 +192,7 @@ q::after {
 }
 
 :is(.button--primary) .button__icon {
-  fill: currentColor;
+  fill: currentcolor;
 }
 
 .button--secondary {
@@ -211,7 +219,7 @@ q::after {
 }
 
 :is(.button--secondary) .button__icon {
-  fill: currentColor;
+  fill: currentcolor;
 }
 
 .subtitle {
@@ -317,6 +325,7 @@ q::after {
   color: #fff;
   background: #007aff;
 }
+
 /* Swiper ends */
 
 /* styles for content: each block has the same width, centered  */
@@ -344,6 +353,7 @@ q::after {
 .logo {
   width: 221px;
   height: 74px;
+  margin-bottom: 10px;
 }
 
 .form_container {
@@ -372,11 +382,45 @@ q::after {
   height: 637px;
 }
 
-.copyright {
+.copy {
+  height: 70px;
   background-color: black;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #p_orange {
   color: var(--orange-800);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+#p_white {
+  color: #fff;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.link_list {
+  list-style: none;
+}
+
+.link_list-head {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 26px;
+  font-family: var(--primary-font-family);
+  margin-bottom: 10px;
+}
+
+.link_list-item a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 36px;
+  font-family: var(--secondary-font-family);
+  color: var(--gray-700);
 }
