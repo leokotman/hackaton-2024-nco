@@ -108,12 +108,6 @@ q::after {
   content: none;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 /* Swiper */
 .swiper {
   width: 100%;
