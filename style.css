@@ -47,8 +47,8 @@
 }
 
 :root {
-  --primary-font-family: Jost, system-ui;
-  --secondary-font-family: Barlow, system-ui;
+  --primary-font-family: jost, system-ui;
+  --secondary-font-family: barlow, system-ui;
   --white: #fff;
   --gray-900: #0e0e0e;
   --gray-700: #555;
@@ -174,4 +174,53 @@ q::after {
 .swiper-pagination-bullet-active {
   color: #fff;
   background: #007aff;
+}
+
+.footer {
+  background-color: var(--gray-900);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map {
+  background-color: white;
+}
+
+.logo {
+  width: 221px;
+  height: 74px;
+}
+
+.form_container {
+  background-color: var(--orange-500);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  height: 184px;
+  z-index: 10;
+  transform: translateY(50%);
+}
+
+.black__container {
+  width: 100%;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 50% auto;
+}
+
+.copyright {
+  background-color: black;
+  text-align: center;
+}
+
+#p_orange {
+  color: var(--orange-800);
 }
