@@ -70,8 +70,14 @@
 }
 
 body {
-  font-family: var(--primary-font-family);
   min-height: 100vh;
+  font-family: var(--primary-font-family);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 142px;
 }
 
 h1,
