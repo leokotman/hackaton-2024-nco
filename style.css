@@ -47,7 +47,19 @@
 }
 
 :root {
-  font-family: Jost, Barlow, system-ui;
+  --primary-font-family: Jost, system-ui;
+  --secondary-font-family: Barlow, system-ui;
+  --white: #fff;
+  --gray-900: #0e0e0e;
+  --gray-700: #555;
+  --gray-400: #cdcdcd;
+  --gray-300: #d8d8d8;
+  --gray-50: #f8f8f8;
+  --orange-500: #fb5b11;
+  --orange-800: #d54702;
+  --red-500: #ff282a;
+  --green-400: #39ca6e;
+
   font-size: 10px;
   line-height: 1.5;
   font-weight: 400;
@@ -58,11 +70,12 @@
 }
 
 body {
+  font-family: var(--primary-font-family);
+  margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  font-size: 1.6rem;
 }
 
 h1,
@@ -106,6 +119,13 @@ q::before,
 q::after {
   content: '';
   content: none;
+}
+
+/* h1 */
+.main__title {
+  color: var(--white);
+  font-size: 15.8rem;
+  line-height: 0.87;
 }
 
 /* Swiper */
