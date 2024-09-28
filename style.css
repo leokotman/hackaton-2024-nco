@@ -360,6 +360,57 @@ q::after {
 
 /* Swiper ends */
 
+/* Cards Price */
+.card__price {
+  border: 1px solid var(--gray-700);
+  padding: 25px;
+  width: 400px;
+  height: 500px;
+  position: relative;
+}
+
+.price-heading,
+.star {
+  display: flex;
+}
+
+.price-heading h4 {
+  font-size: 32px;
+}
+
+.price-heading p {
+  font-size: 16px;
+}
+
+.star img {
+  margin-right: 5px;
+  width: 14px;
+}
+
+.angle {
+  background-color: var(--gray-900);
+  width: 35px;
+  height: 35px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+}
+
+#list_style {
+  border-top: 1px solid var(--gray-400);
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+}
+
+#list_style li {
+  list-style: circle;
+  line-height: 35px;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
 /* Footer block */
 .footer {
   color: #fff;
