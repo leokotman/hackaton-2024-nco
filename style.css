@@ -214,6 +214,29 @@ q::after {
   fill: currentColor;
 }
 
+.subtitle {
+  position: relative;
+  padding-left: 25px;
+  color: var(--gray-900);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.subtitle::before {
+  content: url('./public/assets/icons/line-short-orange.svg');
+  position: absolute;
+  top: -20%;
+  left: 0;
+}
+
+.section__title {
+  color: var(--gray-900);
+  font-weight: 600;
+  font-size: 5.2rem;
+  line-height: 1.2;
+}
+
 /* Swiper */
 .swiper {
   width: 100%;
