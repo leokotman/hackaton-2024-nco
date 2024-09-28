@@ -237,6 +237,39 @@ q::after {
   line-height: 1.2;
 }
 
+.company-status__card {
+  flex: 0 1 25%;
+  padding: 50px 47px;
+  background-color: var(--gray-50);
+  color: var(--gray-900);
+  font-weight: 600;
+  text-align: center;
+  transition:
+    background-color 0.5s ease-in-out,
+    color 0.5s ease-in-out;
+}
+
+@media (any-hover: hover) {
+  .company-status__card:hover {
+    background-color: var(--orange-500);
+    color: var(--white);
+    transition:
+      background-color 0.3s ease-in-out,
+      color 0.3s ease-in-out;
+  }
+}
+
+.card__value {
+  margin-bottom: 10px;
+  font-size: 5.2rem;
+  line-height: 1.2;
+}
+
+.card__text {
+  font-size: 2.4rem;
+  line-height: 1.4;
+}
+
 /* Swiper */
 .swiper {
   width: 100%;
