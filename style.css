@@ -47,8 +47,8 @@
 }
 
 :root {
-  --primary-font-family: Jost, system-ui;
-  --secondary-font-family: Barlow, system-ui;
+  --primary-font-family: jost, system-ui;
+  --secondary-font-family: barlow, system-ui;
   --white: #fff;
   --gray-900: #0e0e0e;
   --gray-700: #555;
@@ -73,6 +73,7 @@ body {
   font-family: var(--primary-font-family);
   margin: 0;
   display: flex;
+  flex-direction: column;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -174,4 +175,66 @@ q::after {
 .swiper-pagination-bullet-active {
   color: #fff;
   background: #007aff;
+}
+
+/* styles for content: each block has the same width, centered  */
+.content-container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/* Footer block */
+.footer {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.map {
+  background-color: white;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+.logo {
+  width: 221px;
+  height: 74px;
+}
+
+.form_container {
+  position: absolute;
+  top: 40%;
+  background-color: var(--orange-500);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  height: 184px;
+  z-index: 10;
+}
+
+.black__container {
+  background-color: var(--gray-900);
+  width: 100%;
+}
+
+.footer-box {
+  background-image: url('/public/assets/images/footer-bg.png');
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 637px;
+}
+
+.copyright {
+  background-color: black;
+  text-align: center;
+}
+
+#p_orange {
+  color: var(--orange-800);
 }
