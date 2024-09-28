@@ -146,6 +146,8 @@ q::after {
 
 .button__icon {
   margin-left: 10px;
+  inline-size: 21.26px;
+  aspect-ratio: 1;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -181,8 +183,8 @@ q::after {
     transform 0.3s ease-in-out;
 }
 
-:is(.button--primary) .button__icon path {
-  fill: var(--white);
+:is(.button--primary) .button__icon {
+  fill: currentColor;
 }
 
 .button--secondary {
@@ -208,8 +210,8 @@ q::after {
   background-color: var(--hover-color);
 }
 
-:is(.button--secondary) .button__icon path {
-  fill: var(--gray-900);
+:is(.button--secondary) .button__icon {
+  fill: currentColor;
 }
 
 /* Swiper */
