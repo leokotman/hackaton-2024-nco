@@ -12,6 +12,22 @@ export const basicSlider = new Swiper('.my-swiper', {
   freeMode: true,
 });
 
+const projectsSlider = document.querySelector(
+  '.swiper--projects .swiper-wrapper'
+);
+
+projectsSlider.innerHTML = allImages.projects
+  .map(image => {
+    return `
+    <div key=${image.id} class="swiper-slide">
+       <img src=${image.url} />
+        <div class="swiper-slide__content">
+           <h4>${image?.content?.heading}</h4>
+            <p>${image?.content?.text}</p>
+         </div>
+    </div>`;
+  })
+  .join('');
 
 const aboutSlider = document.querySelector('.swiper--about .swiper-wrapper');
 
