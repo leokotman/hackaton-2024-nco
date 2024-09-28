@@ -1,5 +1,45 @@
+@font-face {
+  font-family: 'Jost';
+  src:
+    url('./public/assets/fonts/Jost-Regular.woff') format('woff'),
+    url('./public/assets/fonts/Jost-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src:
+    url('./public/assets/fonts/Jost-SemiBold.woff') format('woff'),
+    url('./public/assets/fonts/Jost-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src:
+    url('./public/assets/fonts/Barlow-Regular.woff') format('woff'),
+    url('./public/assets/fonts/Barlow-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src:
+    url('./public/assets/fonts/Barlow-Bold.woff') format('woff'),
+    url('./public/assets/fonts/Barlow-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Jost', 'Barlow', system-ui;
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
@@ -8,6 +48,10 @@
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-family);
 }
 
 a {
