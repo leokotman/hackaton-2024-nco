@@ -139,13 +139,6 @@ q::after {
   inline-size: clamp(270px, 70%, 1297px);
 }
 
-/* h1 */
-.main__title {
-  color: var(--white);
-  font-size: 15.8rem;
-  line-height: 0.87;
-}
-
 .button {
   display: flex;
   align-items: center;
@@ -269,19 +262,21 @@ q::after {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .header__container {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 2fr auto;
   grid-template-rows: auto auto;
   align-items: center;
   margin-inline: auto;
   inline-size: clamp(270px, 91%, 100%);
+  z-index: 1;
 }
 
 .header__logo {
-  position: relative;
   grid-row: 1 / span 2;
   display: flex;
 }
@@ -391,6 +386,60 @@ q::after {
   color: var(--white);
   font-family: var(--primary-font-family);
   font-weight: 600;
+}
+
+/* Hero section */
+/* h1 */
+.hero {
+  position: relative;
+  background-image: url('./public/assets/images/hero-full-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero::before {
+  content: url('./public/assets/images/tractor.png');
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-52%) translateY(44%);
+}
+
+.hero::after {
+  content: url('./public/assets/images/1.png');
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(88%) translateY(100%);
+}
+
+.hero__container {
+  margin-inline: auto;
+  inline-size: clamp(270px, 85%, 100%);
+  background-image: url('./public/assets/images/main-hero-group.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.hero__content {
+  padding-block: 198px 202px;
+  padding-left: 2%;
+  max-inline-size: 60%;
+}
+
+.hero__title {
+  margin-bottom: 6px;
+  color: var(--white);
+  font-size: 15.8rem;
+  line-height: 0.87;
+}
+
+.hero__text {
+  margin-bottom: 43px;
+  max-inline-size: 80%;
+  color: var(--gray-300);
+  font-size: 2.4rem;
+  line-height: 1.4;
 }
 
 /* Company status section */
