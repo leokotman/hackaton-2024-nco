@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 1,
-      "url": "project_1.webp",
+      "url": "/assets/images/project_1.webp",
       "content": {
         "heading": "Skyline Tower Renovation",
         "text": "Contraction"
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "url": "project_2.jpg",
+      "url": "/assets/images/project_2.jpg",
       "content": {
         "heading": "Skyline Tower Renovation",
         "text": "Contraction"

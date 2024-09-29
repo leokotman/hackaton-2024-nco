@@ -21,14 +21,9 @@ const projectsSlider = document.querySelector(
 
 projectsSlider.innerHTML = allImages.projects
   .map(image => {
-    const imgUrl = new URL(
-      `./components/slider/images/${image.url}`,
-      import.meta.url
-    ).href;
-
     return `
     <div key=${image.id} class="swiper-slide">
-       <img src=${imgUrl} />
+       <img src=${image.url} />
         <div class="swiper-slide__content">
            <h4>${image?.content?.heading}</h4>
             <p>${image?.content?.text}</p>
