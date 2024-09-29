@@ -8,28 +8,160 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="mainheader">
-      <img src="public/assets/images/Logo.png" />
-      <nav>
-        <img src="public/assets/icons/header__pin.svg" />
-        <a href="#address">2464 Royal Ln. Mesa, New York</a>
-        <img src="public/assets/icons/header__envelope.svg" />
-        <a href="#email">Info@golzergmail.com</a>
-        <img src="public/assets/icons/header__clock.svg" />
-        <a href="#workhours">Mon - Sat 8:00 - 18:20</a>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#footer">Contacts</a></li>
-        </ul>
-        <img src="public/assets/icons/header__phone.svg" />
-        Call us any time (704) 555-0127
-      </nav>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <a class="header__link" href="/" aria-label="Homepage">
+            <img
+              src="./public/assets/icons/header__Logo.svg"
+              alt="Conbuild Logo"
+            />
+          </a>
+        </div>
+        <div class="header__top">
+          <div class="header__info info">
+            <ul class="info__list">
+              <li class="info__item">
+                <svg class="info__icon">
+                  <use xlink:href="./public/assets/icons/sprite.svg#pin"></use>
+                </svg>
+                <a
+                  class="info__link"
+                  href="https://www.google.co.uk/maps/search/2464+Royal+Ln.+Mesa,+New+York/@40.6976312,-74.1444879,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  >2464 Royal Ln. Mesa, New York</a
+                >
+              </li>
+              <li class="info__item">
+                <svg class="info__icon">
+                  <use
+                    xlink:href="./public/assets/icons/sprite.svg#envelope"
+                  ></use>
+                </svg>
+                <a
+                  class="info__link"
+                  href="mailto:info@golzergmail.com"
+                  target="_blank"
+                  >info@golzergmail.com</a
+                >
+              </li>
+              <li class="info__item">
+                <svg class="info__icon">
+                  <use
+                    xlink:href="./public/assets/icons/sprite.svg#clock"
+                  ></use>
+                </svg>
+                Mon - Sat 8:00 - 18:20
+              </li>
+            </ul>
+          </div>
+          <div class="header__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://facebook.com/"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <img
+                    class="social__icon"
+                    src="./public/assets/icons/header__Facebook.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <img
+                    class="social__icon"
+                    src="./public/assets/icons/header__Instragram.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://x.com/"
+                  target="_blank"
+                  aria-label="Twitter"
+                >
+                  <img
+                    class="social__icon"
+                    src="./public/assets/icons/header__Twitter.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  aria-label="Linkedin"
+                >
+                  <img
+                    class="social__icon"
+                    src="./public/assets/icons/header__Linkedin.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class="header__nav nav" aria-label="Main navigation">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#home">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#projects">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#team">Team</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#blog">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#footer">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__contact contact">
+          <button
+            class="button button--primary contact__button"
+            type="button"
+            aria-label="Call us"
+          >
+            <svg class="info__icon" width="20" height="20">
+              <use xlink:href="./public/assets/icons/sprite.svg#phone"></use>
+            </svg>
+          </button>
+          <div class="contact__content">
+            <p class="contact__text">Call us any time</p>
+            <p class="contact__phone">(704) 555-0127</p>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main id="home">
