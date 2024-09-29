@@ -51,16 +51,16 @@ export const basicSlider = new Swiper('.swiper--basic', {
   freeMode: true,
 });
 
-const swiperThumbs = new Swiper('.mySwiper', {
+const swiperThumbs = new Swiper('.team-members__thumbs', {
   spaceBetween: 10,
   slidesPerView: 4,
   freeMode: true,
   watchSlidesProgress: true,
-  swiperElementNodeName: '.mySwiper2',
+  swiperElementNodeName: '.team-members__slider',
   direction: 'vertical', // Set direction to vertical for the names
 });
 
-export const swiperMain = new Swiper('.mySwiper2', {
+export const swiperMain = new Swiper('.team-members__slider', {
   modules: [Thumbs],
   spaceBetween: 10,
 
