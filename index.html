@@ -196,25 +196,36 @@
       </section>
 
       <!-- about us -->
-      <section class="about-us">
+      <section class="section about-us">
         <div class="content-container">
           <header class="projects__header">
-            <div>
-              <h2 id="about">About Us</h2>
-              <h3>What About Our Industry Performance.</h3>
+            <div class="header__left">
+              <h2 class="subtitle" id="about">About Us</h2>
+              <h3 class="section__title">
+                What About Our Industry Performance.
+              </h3>
             </div>
-            <div>
-              <p>
+            <div class="header__right">
+              <p class="about-us__text">
                 In today's world, we're bombarded with choices. From streaming
                 services to meal kits, it can be overwhelming.
               </p>
-              <button>button</button>
-              <p>25+ Experience</p>
+              <div class="about-us__button-wrap">
+                <button class="button button--primary" type="button">
+                  Read More
+                  <svg class="button__icon">
+                    <use
+                      xlink:href="./public/assets/icons/sprite.svg#arrow-up"
+                    ></use>
+                  </svg>
+                </button>
+                <p class="about-us__experience">25+ Experience</p>
+              </div>
             </div>
           </header>
 
           <!-- slider -->
-          <div class="swiper swiper--basic swiper--about">
+          <div class="swiper swiper--basic swiper--about" id="aboutSlider">
             <div class="swiper-wrapper">
               <!-- the content is generated from slider.js -->
             </div>
@@ -223,17 +234,27 @@
             <div
               class="swiper--basic__navigation swiper--basic__navigation--bottom"
             >
-              <button class="arrow arrow-left">
+              <button
+                class="arrow arrow-left"
+                id="aboutSliderLeft"
+                type="button"
+                aria-label="Previous slide"
+              >
                 <svg class="arrow__icon">
                   <use
-                    xlink:href="/public/assets/icons/sprite.svg#arrow-left"
+                    xlink:href="./public/assets/icons/sprite.svg#arrow-left"
                   ></use>
                 </svg>
               </button>
-              <button class="arrow arrow-right">
+              <button
+                class="arrow arrow-right"
+                id="aboutSliderRight"
+                type="button"
+                aria-label="Next slide"
+              >
                 <svg class="arrow__icon">
                   <use
-                    xlink:href="/public/assets/icons/sprite.svg#arrow-right"
+                    xlink:href="./public/assets/icons/sprite.svg#arrow-right"
                   ></use>
                 </svg>
               </button>
@@ -279,14 +300,24 @@
 
           <!-- slider navigation -->
           <div class="swiper--basic__navigation swiper--basic__navigation--top">
-            <button class="arrow arrow-left">
+            <button
+              class="arrow arrow-left"
+              id="projectsSliderLeft"
+              type="button"
+              aria-label="Previous slide"
+            >
               <svg class="arrow__icon">
                 <use
                   xlink:href="/public/assets/icons/sprite.svg#arrow-left"
                 ></use>
               </svg>
             </button>
-            <button class="arrow arrow-right">
+            <button
+              class="arrow arrow-right"
+              id="projectsSliderRight"
+              type="button"
+              aria-label="Next slide"
+            >
               <svg class="arrow__icon">
                 <use
                   xlink:href="/public/assets/icons/sprite.svg#arrow-right"
@@ -297,7 +328,7 @@
         </header>
 
         <!-- slider -->
-        <div class="swiper swiper--basic swiper--projects">
+        <div class="swiper swiper--basic swiper--projects" id="projectsSlider">
           <div class="swiper-wrapper">
             <!-- the content is generated from slider.js -->
           </div>

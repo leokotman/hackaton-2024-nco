@@ -443,6 +443,58 @@ q::after {
   line-height: 1.4;
 }
 
+.projects__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* About us section */
+:is(.about-us) .projects__header {
+  gap: 2%;
+}
+
+:is(.about-us) .subtitle {
+  margin-bottom: 14px;
+}
+
+:is(.about-us) .section__title {
+  text-wrap: pretty;
+}
+
+.header__right {
+  flex: 0 1 50%;
+  padding-top: 16px;
+}
+
+.about-us__text {
+  margin-bottom: 23px;
+}
+
+.about-us__button-wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.about-us__experience {
+  position: relative;
+  color: var(--gray-900);
+  font-family: var(--primary-font-family);
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 1.3;
+}
+
+.about-us__experience::before {
+  content: url('./public/assets/images/experience-shadow.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  inline-size: 100%;
+  transform: translateY(55%);
+  z-index: -1;
+}
+
 /* Company status section */
 .company-status {
   position: relative;
@@ -556,12 +608,16 @@ h4.slide__content__heading {
 }
 
 .swiper-slide__content {
-  visibility: hidden;
   position: absolute;
   bottom: 30px;
   left: 30px;
   margin-inline: auto;
   width: fit-content;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    visibility 0s linear 0.3s,
+    opacity 0.3s;
 }
 
 .swiper-slide__content p {
@@ -576,6 +632,10 @@ h4.slide__content__heading {
 
 .swiper-slide:hover .swiper-slide__content {
   visibility: visible;
+  opacity: 1;
+  transition:
+    visibility 0s linear 0s,
+    opacity 0.3s;
 }
 
 .custom-img {
@@ -599,11 +659,6 @@ h4.slide__content__heading {
 /* Our projects slider */
 .swiper--projects .swiper-wrapper {
   height: 443px;
-}
-
-.projects__header {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* Team members slider */
