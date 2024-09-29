@@ -559,12 +559,37 @@ h4.slide__content__heading {
 /* Swiper ends */
 
 /* Cards Price */
+
+.cards {
+  display: flex;
+}
+
+.center-div {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 .card__price {
   border: 1px solid var(--gray-700);
   padding: 25px;
   width: 400px;
   height: 500px;
   position: relative;
+  margin-right: 25px;
+}
+
+@media (any-hover: hover) {
+  .hover-orange:hover {
+    background-color: var(--orange-500);
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .hover-orange:hover + .angle {
+    transition: transform 0.3s ease-in-out;
+    background-color: var(--orange-500); /* Пример изменения цвета */
+  }
 }
 
 .price-heading,
@@ -578,6 +603,7 @@ h4.slide__content__heading {
 
 .price-heading p {
   font-size: 16px;
+  transform: translateY(15px);
 }
 
 .star img {
@@ -593,6 +619,23 @@ h4.slide__content__heading {
   left: 0;
   position: absolute;
   clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+}
+
+.special {
+  background-color: var(--green-400);
+  width: 100px;
+  height: 30px;
+  border-radius: 100px;
+  top: 7px;
+  left: 65%;
+  position: absolute;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 31.9%);
+}
+
+.special_p {
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 #list_style {
