@@ -1,47 +1,51 @@
 import { Swiper } from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css/bundle';
 import 'swiper/css/navigation';
 
-const imagesJsonFromApi = await fetch(
-  'https://jsonplaceholder.typicode.com/photos'
-)
-  .then(response => response.json())
-  .then(json => json);
+// allImages json contains the images url and content to render
+// to add more images in a slider you need to update the images data the corresponding list
+import allImages from './components/slider/images.json';
 
-const imagesToUse = imagesJsonFromApi.slice(0, 20);
-imagesToUse.unshift({ url: '/assets/images/cat.jpg' });
+const projectsSlider = document.querySelector(
+  '.swiper--projects .swiper-wrapper'
+);
 
-export const swiper = new Swiper('.my-swiper', {
-  modules: [Navigation, Pagination],
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    bulletClass: 'custom-bullet',
-    renderBullet: function (index, className) {
-      return (
-        '<span class="custom-bullet ' +
-        className +
-        '">' +
-        (index + 1) +
-        '</span>'
-      );
-    },
-  },
+projectsSlider.innerHTML = allImages.projects
+  .map(image => {
+    return `
+    <div key=${image.id} class="swiper-slide">
+       <img src=${image.url} />
+        <div class="swiper-slide__content">
+           <h4>${image?.content?.heading}</h4>
+            <p>${image?.content?.text}</p>
+         </div>
+    </div>`;
+  })
+  .join('');
+
+const aboutSlider = document.querySelector('.swiper--about .swiper-wrapper');
+
+aboutSlider.innerHTML = allImages.about
+  .map(image => {
+    return `
+    <div key=${image.id} class="swiper-slide">
+       <img src=${image.url} />
+        <div class="swiper-slide__content">
+           <h4 class="slide__content__heading">${image?.content?.heading}</h4>
+            <ul class="slide__content__list">${image?.content?.list.join('')}</ul>
+         </div>
+    </div>`;
+  })
+  .join('');
+
+export const basicSlider = new Swiper('.swiper--basic', {
+  modules: [Navigation],
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper--basic__navigation .arrow-right',
+    prevEl: '.swiper--basic__navigation .arrow-left',
   },
   slidesPerView: 3,
   spaceBetween: 30,
   freeMode: true,
 });
-
-swiper.height = 300;
-const sliderWrapper = document.querySelector('.swiper-wrapper');
-sliderWrapper.innerHTML = imagesToUse
-  .map(image => {
-    return `<div class="swiper-slide"><img class="custom-img" src=${image.url} /></div>`;
-  })
-  .join('');

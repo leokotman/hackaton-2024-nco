@@ -1,0 +1,130 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "url": "/assets/images/project_1.webp",
+      "content": {
+        "heading": "Skyline Tower Renovation",
+        "text": "Contraction"
+      }
+    },
+    {
+      "id": 2,
+      "url": "/assets/images/project_2.jpg",
+      "content": {
+        "heading": "Skyline Tower Renovation",
+        "text": "Contraction"
+      }
+    },
+    {
+      "id": 3,
+      "url": "/assets/images/project_3.webp",
+      "content": {
+        "heading": "Skyline Tower Renovation",
+        "text": "Contraction"
+      }
+    },
+    {
+      "id": 4,
+      "url": "/assets/images/project_4.webp",
+      "content": {
+        "heading": "Skyline Tower Renovation",
+        "text": "Contraction"
+      }
+    },
+    {
+      "id": 5,
+      "url": "/assets/images/project_5.jpg",
+      "content": {
+        "heading": "Skyline Tower Renovation",
+        "text": "Contraction"
+      }
+    }
+  ],
+  "about": [
+    {
+      "id": 101,
+      "url": "/assets/images/worker10.png",
+      "content": {
+        "heading": "Core Values",
+        "list": [
+          "<li><p>+ Integrity and ethics</p></li>",
+          "<li><p>+ Commitment to quality</p></li>",
+          "<li><p>+ Innovation and creativity</p></li>"
+        ]
+      }
+    },
+    {
+      "id": 102,
+      "url": "/assets/images/worker11.jpg",
+      "content": {
+        "heading": "Community Engagement",
+        "list": [
+          "<li><p>+ Integrity and ethics</p></li>",
+          "<li><p>+ Commitment to quality</p></li>",
+          "<li><p>+ Innovation and creativity</p></li>"
+        ]
+      }
+    },
+    {
+      "id": 103,
+      "url": "/assets/images/worker12.jpg",
+      "content": {
+        "heading": "Our Vision",
+        "list": [
+          "<li><p>+ Integrity and ethics</p></li>",
+          "<li><p>+ Commitment to quality</p></li>",
+          "<li><p>+ Innovation and creativity</p></li>"
+        ]
+      }
+    },
+    {
+      "id": 104,
+      "url": "/assets/images/worker13.jpg",
+      "content": {
+        "heading": "Community Engagement",
+        "list": [
+          "<li><p>+ Integrity and ethics</p></li>",
+          "<li><p>+ Commitment to quality</p></li>",
+          "<li><p>+ Innovation and creativity</p></li>"
+        ]
+      }
+    },
+    {
+      "id": 104,
+      "url": "/assets/images/worker14.jpg",
+      "content": {
+        "heading": "Core Values",
+        "list": [
+          "<li><p>+ Integrity and ethics</p></li>",
+          "<li><p>+ Commitment to quality</p></li>",
+          "<li><p>+ Innovation and creativity</p></li>"
+        ]
+      }
+    },
+    {
+      "id": 105,
+      "url": "/assets/images/worker15.jpg",
+      "content": {
+        "heading": "Our Vision",
+        "list": [
+          "<li><p>+ Integrity and ethics</p></li>",
+          "<li><p>+ Commitment to quality</p></li>",
+          "<li><p>+ Innovation and creativity</p></li>"
+        ]
+      }
+    },
+    {
+      "id": 105,
+      "url": "/assets/images/worker16.jpg",
+      "content": {
+        "heading": "Community Engagement",
+        "list": [
+          "<li><p>+ Integrity and ethics</p></li>",
+          "<li><p>+ Commitment to quality</p></li>",
+          "<li><p>+ Innovation and creativity</p></li>"
+        ]
+      }
+    }
+  ]
+}
