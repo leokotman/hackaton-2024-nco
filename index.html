@@ -190,8 +190,8 @@
       <section class="services__slider">
         <div class="content-container">
           <div class="content--left">
-            <h2>Latest Services</h2>
-            <h3>The Best Services For you.</h3>
+            <h2 class="subtitle">Latest Services</h2>
+            <h3 class="section__title">The Best Services For you.</h3>
             <h4>Building Contraction</h4>
           </div>
 
@@ -304,8 +304,8 @@
       <section id="projects" class="projects">
         <header class="projects__header content-container">
           <div>
-            <h2>Our Projects</h2>
-            <h3>Trusted & Reliable</h3>
+            <h2 class="subtitle">Our Projects</h2>
+            <h3 class="section__title">Trusted & Reliable</h3>
           </div>
 
           <!-- slider navigation -->
@@ -348,14 +348,79 @@
 
       <!-- how to process -->
       <section class="how-to-process">
-        <h2>How To Process</h2>
-        <h3>Steps In The Construction Process</h3>
+        <div class="content-container">
+          <h2 class="subtitle">How To Process</h2>
+          <h3 class="section__title">Steps In The Construction Process</h3>
+
+          <!-- Process Tabs -->
+          <div class="swiper process-tabs">
+            <div class="swiper-wrapper">
+              <button
+                class="swiper-slide button button--secondary"
+                type="button"
+              >
+                01. Planning And Design
+              </button>
+              <button
+                class="swiper-slide button button--secondary"
+                type="button"
+              >
+                02. Permitting And Approvals
+              </button>
+              <button
+                class="swiper-slide button button--secondary"
+                type="button"
+              >
+                03. Foundation Construction
+              </button>
+            </div>
+          </div>
+
+          <!-- Process Videos Slider -->
+          <div id="process-slider" class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <video
+                  muted
+                  poster="public/assets/images/video_1_preview.png"
+                  height="540"
+                  width="1296"
+                >
+                  <source src="public/assets/videos/1.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="swiper-slide">
+                <video
+                  muted
+                  poster="public/assets/images/video_2_preview.png"
+                  height="540"
+                  width="1296"
+                >
+                  <source src="public/assets/videos/2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="swiper-slide">
+                <video
+                  muted
+                  poster="public/assets/images/video_3_preview.png"
+                  height="540"
+                  width="1296"
+                >
+                  <source src="public/assets/videos/3.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- our testimonial -->
       <section class="testimonial" id="testimonials">
         <div class="content-container">
-          <h2>Our testimonials</h2>
+          <h2 class="subtitle">Our testimonials</h2>
           <h3 class="section__title">What Our Clients Say About Our Work.</h3>
           <div class="testimonial-content">
             <div class="testimonial-text" id="testimonial-text">
@@ -436,7 +501,7 @@
         <div class="content-container">
           <div class="content--left">
             <h2 id="team">Our Team Members</h2>
-            <h3>Our Dedicated Team Members.</h3>
+            <h3 class="section__title">Our Dedicated Team Members.</h3>
             <p>
               In today's world, we're bombarded with choices. From streaming
               services to meal kits, it can be overwhelming to find the best
@@ -603,7 +668,7 @@
       <!-- our blog -->
       <section class="blog">
         <h2 id="blog">Our Blog</h2>
-        <h3>Latest Insights And Updates</h3>
+        <h3 class="section__title">Latest Insights And Updates</h3>
       </section>
     </main>
 
@@ -620,7 +685,7 @@
         ></iframe>
       </div>
       <div class="form_container">
-        <h3>
+        <h3 class="section__title">
           Sign Up For Our Newsletter <br />
           To Get Weekly Updates.
         </h3>
