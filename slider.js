@@ -2,9 +2,12 @@ import { Swiper } from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+
+// allImages json contains the images url and content to render
+// to add more images in a slider you need to update the images data the corresponding list
 import allImages from './public/assets/images/images.json';
 
-export const basicSlider = new Swiper('.my-swiper', {
+export const basicSlider = new Swiper('.swiper--basic', {
   modules: [Navigation],
   navigation: { nextEl: '.arrow-right', prevEl: '.arrow-left' },
   slidesPerView: 3,
