@@ -312,22 +312,82 @@
       </section>
 
       <!-- our testimonial -->
-      <section class="testimonial">
-        <img src="public/assets/images/left_scheme.png" />
-        <h2 id="testimonials">Our testimonials</h2>
-        <h3>What Our Clients Say About Our Work.</h3>
+      <section class="testimonial" id="testimonials">
+        <div class="content-container">
+          <h2>Our testimonials</h2>
+          <h3 class="section__title">What Our Clients Say About Our Work.</h3>
+          <div class="testimonial-content">
+            <div class="testimonial-text" id="testimonial-text">
+              <!-- This block will be updated dynamically based on the active slide -->
+            </div>
 
-        <!-- slider content -->
-        <p>
-          Working with consik a fantastic experience. They truly understood our
-          vision and turned our dream home into a reality. The attention to
-          detail and dedication were The team.
-        </p>
-        <img src="public/assets/icons/quote.svg" />
-        <h4>Brooklyn Simmons</h4>
-        <h5>Architect Designer</h5>
-        <img src="public/assets/icons/testimonials-bg.svg" />
-        <!-- slider navigation circles -->
+            <!-- Right Slider Block -->
+            <div class="testimonial-slider">
+              <!-- Main Swiper (Testimonial Texts) -->
+              <div class="swiper testimonial-slider__main">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <p>
+                      Working with Consik was a fantastic experience. They truly
+                      understood our vision and turned our dream home into a
+                      reality. The attention to detail and dedication were
+                      impeccable.
+                    </p>
+                    <h4>Brooklyn Simmons</h4>
+                    <h5>Architect Designer</h5>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>
+                      The team at Consik were amazing. They executed our vision
+                      perfectly and exceeded our expectations. Highly
+                      recommended!
+                    </p>
+                    <h4>Wade Warren</h4>
+                    <h5>Interior Designer</h5>
+                  </div>
+                  <div class="swiper-slide">
+                    <p>
+                      Consik took care of everything, from planning to
+                      completion. It was a smooth process, and I’m thrilled with
+                      the results!
+                    </p>
+                    <h4>Esther Howard</h4>
+                    <h5>Project Manager</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <img
+              src="public/assets/icons/testimonials-bg.svg"
+              class="testimonial-triangle"
+              alt="Moving triangle"
+            />
+
+            <!-- Swiper for circles (Thumbs) -->
+            <div class="swiper testimonial-slider__thumbs">
+              <div class="swiper-wrapper">
+                <img
+                  class="swiper-slide"
+                  src="public/assets/images/worker8_6_11zon.webp"
+                  alt="Worker 1"
+                />
+
+                <img
+                  class="swiper-slide"
+                  src="public/assets/images/worker6_5_11zon.webp"
+                  alt="Worker 2"
+                />
+
+                <img
+                  class="swiper-slide"
+                  src="public/assets/images/worker9_7_11zon.webp"
+                  alt="Worker 3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- our team member -->

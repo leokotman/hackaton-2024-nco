@@ -68,3 +68,21 @@ export const swiperMain = new Swiper('.team-members__slider', {
     swiper: swiperThumbs, // Connect the main swiper with the thumbs
   },
 });
+
+// Initialize Swiper for Testimonial Thumbs
+const swiperTestimonialThumbs = new Swiper('.testimonial-slider__thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  swiperElementNodeName: '.testimonial-slider__main',
+  direction: 'vertical', // Vertical navigation for the circles (thumbs)
+});
+
+// Initialize Swiper for Main Testimonial Content (connected with the thumbs)
+export const swiperTestimonialMain = new Swiper('.testimonial-slider__main', {
+  modules: [Thumbs],
+  thumbs: {
+    swiper: swiperTestimonialThumbs, // Link the main slider to the thumbs
+  },
+});
