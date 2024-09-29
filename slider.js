@@ -1,19 +1,11 @@
 import { Swiper } from 'swiper';
 import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/bundle';
+import 'swiper/css/navigation';
 
 // allImages json contains the images url and content to render
 // to add more images in a slider you need to update the images data the corresponding list
 import allImages from './components/slider/images.json';
-
-export const basicSlider = new Swiper('.swiper--basic', {
-  modules: [Navigation],
-  navigation: { nextEl: '.arrow-right', prevEl: '.arrow-left' },
-  slidesPerView: 3,
-  spaceBetween: 30,
-  freeMode: true,
-});
 
 const projectsSlider = document.querySelector(
   '.swiper--projects .swiper-wrapper'
@@ -46,3 +38,14 @@ aboutSlider.innerHTML = allImages.about
     </div>`;
   })
   .join('');
+
+export const basicSlider = new Swiper('.swiper--basic', {
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.swiper--basic__navigation .arrow-right',
+    prevEl: '.swiper--basic__navigation .arrow-left',
+  },
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+});
