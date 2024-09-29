@@ -72,6 +72,7 @@
 body {
   min-height: 100vh;
   font-family: var(--primary-font-family);
+  scroll-behavior: smooth;
 }
 
 main {
@@ -105,7 +106,8 @@ li {
 
 a {
   background-color: transparent;
-  text-decoration: 'none';
+  color: inherit;
+  text-decoration: none;
 }
 
 button {
@@ -252,6 +254,143 @@ q::after {
   font-weight: 600;
   font-size: 5.2rem;
   line-height: 1.2;
+}
+
+/* Header */
+.header {
+  position: relative;
+  background-color: var(--gray-900);
+  color: var(--white);
+  font-family: var(--secondary-font-family);
+}
+
+.header::before {
+  content: url('./public/assets/images/header-logo-bg.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  margin-inline: auto;
+  inline-size: clamp(270px, 91%, 100%);
+}
+
+.header__logo {
+  position: relative;
+  grid-row: 1 / span 2;
+  display: flex;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info__list {
+  display: flex;
+  gap: 40px;
+}
+
+.info__item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--gray-400);
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+.info__icon {
+  inline-size: 12px;
+  aspect-ratio: 1;
+}
+
+.social__list {
+  display: flex;
+  gap: 20px;
+}
+
+.social__link {
+  display: flex;
+  inline-size: 10px;
+  aspect-ratio: 1;
+}
+
+.header__nav {
+  grid-column: 2;
+  display: flex;
+  padding: 31px 20px 32px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 35px;
+}
+
+.nav__item {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.nav__link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(35px);
+  width: 0;
+  height: 4px;
+  background-color: var(--orange-500);
+  transition: width 0.3s ease;
+}
+
+.nav__link--active {
+  color: var(--orange-500);
+}
+
+.nav__link:hover::after,
+.nav__link--active::after {
+  width: 100%;
+}
+
+.header__contact {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact__button {
+  margin-right: 14px;
+  padding: 20px;
+}
+
+.contact__text {
+  color: var(--gray-400);
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+.contact__phone {
+  color: var(--white);
+  font-family: var(--primary-font-family);
+  font-weight: 600;
 }
 
 /* Company status section */
