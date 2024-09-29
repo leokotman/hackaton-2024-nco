@@ -120,3 +120,38 @@ servicesSlider.innerHTML = allImages.services
     </div>`;
   })
   .join('');
+
+const processTabsSwiper = new Swiper('.process-tabs', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  watchSlidesProgress: true, // This keeps track of the slides that are in view
+});
+
+// Initialize the Swiper for the main video slider
+export const processVideoSwiper = new Swiper('#process-slider', {
+  modules: [Thumbs],
+  spaceBetween: 10,
+  thumbs: {
+    swiper: processTabsSwiper, // Connect the video slider with the tabs
+  },
+  on: {
+    slideChange: function () {
+      // Pause all videos in the slides
+      document.querySelectorAll('#process-slider video').forEach(video => {
+        video.pause();
+        video.currentTime = 0; // Optional: Reset the video to the start
+      });
+    },
+  },
+});
+
+document.querySelectorAll('#process-slider video').forEach(video => {
+  video.addEventListener('click', function () {
+    // Play the video when clicked
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+});
