@@ -126,5 +126,23 @@
         ]
       }
     }
+  ],
+  "services": [
+    {
+      "id": 201,
+      "url": "/assets/images/services.jpg"
+    },
+    {
+      "id": 202,
+      "url": "/assets/images/services2.jpg"
+    },
+    {
+      "id": 203,
+      "url": "/assets/images/services5_2_11zon.webp"
+    },
+    {
+      "id": 204,
+      "url": "/assets/images/services7.jpg"
+    }
   ]
 }
