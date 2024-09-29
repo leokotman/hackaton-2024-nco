@@ -17,9 +17,9 @@ projectsSlider.innerHTML = allImages.projects
     return `
     <div key=${image.id} class="swiper-slide">
        <img src=${image.url} />
-        <div class="swiper-slide__content">
-           <h4>${image?.content?.heading}</h4>
-            <p>${image?.content?.text}</p>
+        <div class="swiper-slide__content">        
+          <span class="slide__content__desc">${image?.content?.text}</span>
+          <h4 class="slide__content__heading">${image?.content?.heading}</h4>
          </div>
     </div>`;
   })
