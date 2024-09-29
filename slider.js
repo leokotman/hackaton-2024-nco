@@ -1,7 +1,8 @@
 import { Swiper } from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Thumbs } from 'swiper/modules';
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
 
 // allImages json contains the images url and content to render
 // to add more images in a slider you need to update the images data the corresponding list
@@ -48,4 +49,40 @@ export const basicSlider = new Swiper('.swiper--basic', {
   slidesPerView: 3,
   spaceBetween: 30,
   freeMode: true,
+});
+
+const swiperThumbs = new Swiper('.team-members__thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  swiperElementNodeName: '.team-members__slider',
+  direction: 'vertical', // Set direction to vertical for the names
+});
+
+export const swiperMain = new Swiper('.team-members__slider', {
+  modules: [Thumbs],
+  spaceBetween: 10,
+
+  thumbs: {
+    swiper: swiperThumbs, // Connect the main swiper with the thumbs
+  },
+});
+
+// Initialize Swiper for Testimonial Thumbs
+const swiperTestimonialThumbs = new Swiper('.testimonial-slider__thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+  swiperElementNodeName: '.testimonial-slider__main',
+  direction: 'vertical', // Vertical navigation for the circles (thumbs)
+});
+
+// Initialize Swiper for Main Testimonial Content (connected with the thumbs)
+export const swiperTestimonialMain = new Swiper('.testimonial-slider__main', {
+  modules: [Thumbs],
+  thumbs: {
+    swiper: swiperTestimonialThumbs, // Link the main slider to the thumbs
+  },
 });
