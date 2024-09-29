@@ -333,12 +333,27 @@
       <!-- our team member -->
       <section class="team-members">
         <div class="content-container">
-          <h2 id="team">Our Team Members</h2>
-          <h3>Our Dedicated Team Members.</h3>
+          <div class="content--left">
+            <h2 id="team">Our Team Members</h2>
+            <h3>Our Dedicated Team Members.</h3>
+            <p>
+              In today's world, we're bombarded with choices. From streaming
+              services to meal kits, it can be overwhelming to find the best
+              option.
+            </p>
+            <button class="button button--secondary hover-orange" type="button">
+              Explore More
+              <svg class="button__icon">
+                <use
+                  xlink:href="./public/assets/icons/sprite.svg#arrow-up"
+                ></use>
+              </svg>
+            </button>
+          </div>
 
-          <div class="members__slider">
+          <div class="members__slider content--right">
             <!-- Main Swiper (photos) -->
-            <div class="swiper mySwiper2">
+            <div class="swiper team-members__slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="public/assets/images/worker18.jpg" />
@@ -359,7 +374,10 @@
             </div>
 
             <!-- Swiper for names (thumbs) -->
-            <div thumbsSlider="" class="swiper mySwiper thumbsslider">
+            <div
+              thumbsSlider=""
+              class="swiper team-members__thumbs thumbsslider"
+            >
               <div class="swiper-wrapper">
                 <div class="swiper-slide">Brooklyn Simmons</div>
                 <div class="swiper-slide">Wade Warren</div>
