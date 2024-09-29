@@ -322,17 +322,21 @@ h4.slide__content__heading {
   text-align: left;
 }
 
-.my-swiper__navigation {
+.swiper--basic__navigation {
   display: flex;
   justify-content: center;
   gap: 28px;
 }
 
-.my-swiper__navigation--bottom {
+.swiper--basic__navigation--bottom {
   margin-top: 52px;
 }
 
-.my-swiper .arrow {
+.swiper--basic__navigation--top {
+  /* add styles here if needed */
+}
+
+.swiper--basic .arrow {
   z-index: 5;
 }
 
@@ -345,11 +349,11 @@ h4.slide__content__heading {
   fill: var(--orange-500);
 }
 
-.my-swiper .arrow.arrow-left {
+.swiper--basic .arrow.arrow-left {
   left: 0;
 }
 
-.my-swiper .arrow.arrow-right {
+.swiper--basic .arrow.arrow-right {
   right: 0;
 }
 
@@ -401,6 +405,16 @@ h4.slide__content__heading {
 /* About us slider */
 .swiper--about .swiper-wrapper {
   height: 332px;
+}
+
+/* Our projects slider */
+.swiper--projects .swiper-wrapper {
+  height: 443px;
+}
+
+.projects__header {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Swiper ends */

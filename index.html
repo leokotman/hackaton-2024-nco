@@ -53,26 +53,49 @@
 
       <!-- about us -->
       <section class="about-us">
-        <h2 id="about">About Us</h2>
-        <h3>What About Our Industry Performance.</h3>
-        <div class="swiper my-swiper swiper--about">
-          <div class="swiper-wrapper"></div>
-          <div class="my-swiper__navigation my-swiper__navigation--bottom">
-            <button class="arrow arrow-left">
-              <svg class="arrow__icon">
-                <use
-                  xlink:href="/public/assets/icons/sprite.svg#arrow-left"
-                ></use>
-              </svg>
-            </button>
-            <button class="arrow arrow-right">
-              <svg class="arrow__icon">
-                <use
-                  xlink:href="/public/assets/icons/sprite.svg#arrow-right"
-                ></use>
-              </svg>
-            </button>
+        <div class="content-container">
+          <header class="projects__header">
+            <div>
+              <h2 id="about">About Us</h2>
+              <h3>What About Our Industry Performance.</h3>
+            </div>
+            <div>
+              <p>
+                In today's world, we're bombarded with choices. From streaming
+                services to meal kits, it can be overwhelming.
+              </p>
+              <button>button</button>
+              <p>25+ Experience</p>
+            </div>
+          </header>
+
+          <!-- slider -->
+          <div class="swiper swiper--basic swiper--about">
+            <div class="swiper-wrapper">
+              <!-- the content is generated from slider.js -->
+            </div>
+
+            <!-- slider navigation -->
+            <div
+              class="swiper--basic__navigation swiper--basic__navigation--bottom"
+            >
+              <button class="arrow arrow-left">
+                <svg class="arrow__icon">
+                  <use
+                    xlink:href="/public/assets/icons/sprite.svg#arrow-left"
+                  ></use>
+                </svg>
+              </button>
+              <button class="arrow arrow-right">
+                <svg class="arrow__icon">
+                  <use
+                    xlink:href="/public/assets/icons/sprite.svg#arrow-right"
+                  ></use>
+                </svg>
+              </button>
+            </div>
           </div>
+          <!-- slider end -->
         </div>
       </section>
 
@@ -103,13 +126,15 @@
       </section>
 
       <!-- our projects -->
-      <section class="project">
-        <h2 id="projects">Our Projects</h2>
-        <h3>Trusted And Reliable</h3>
+      <section id="projects" class="projects">
+        <header class="projects__header content-container">
+          <div>
+            <h2>Our Projects</h2>
+            <h3>Trusted & Reliable</h3>
+          </div>
 
-        <div class="swiper my-swiper swiper--projects">
-          <div class="swiper-wrapper"></div>
-          <div class="my-swiper__navigation my-swiper__navigation--bottom">
+          <!-- slider navigation -->
+          <div class="swiper--basic__navigation swiper--basic__navigation--top">
             <button class="arrow arrow-left">
               <svg class="arrow__icon">
                 <use
@@ -125,7 +150,15 @@
               </svg>
             </button>
           </div>
+        </header>
+
+        <!-- slider -->
+        <div class="swiper swiper--basic swiper--projects">
+          <div class="swiper-wrapper">
+            <!-- the content is generated from slider.js -->
+          </div>
         </div>
+        <!-- slider end -->
       </section>
 
       <!-- how to process -->
