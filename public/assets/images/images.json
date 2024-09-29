@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 1,
-      "url": "/public/assets/images/project_1.webp",
+      "url": "public/assets/images/project_1.webp",
       "content": {
         "heading": "Skyline Tower Renovation",
         "text": "Contraction"
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "url": "/public/assets/images/project_2.jpg",
+      "url": "public/assets/images/project_2.jpg",
       "content": {
         "heading": "Skyline Tower Renovation",
         "text": "Contraction"
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "url": "/public/assets/images/project_3.webp",
+      "url": "public/assets/images/project_3.webp",
       "content": {
         "heading": "Skyline Tower Renovation",
         "text": "Contraction"
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "url": "/public/assets/images/project_4.webp",
+      "url": "public/assets/images/project_4.webp",
       "content": {
         "heading": "Skyline Tower Renovation",
         "text": "Contraction"
@@ -34,7 +34,7 @@
     },
     {
       "id": 5,
-      "url": "/public/assets/images/project_5.jpg",
+      "url": "public/assets/images/project_5.jpg",
       "content": {
         "heading": "Skyline Tower Renovation",
         "text": "Contraction"
@@ -44,7 +44,7 @@
   "about": [
     {
       "id": 101,
-      "url": "/public/assets/images/worker10.png",
+      "url": "public/assets/images/worker10.png",
       "content": {
         "heading": "Core Values",
         "list": [
@@ -56,7 +56,7 @@
     },
     {
       "id": 102,
-      "url": "/public/assets/images/worker11.jpg",
+      "url": "public/assets/images/worker11.jpg",
       "content": {
         "heading": "Community Engagement",
         "list": [
@@ -68,7 +68,7 @@
     },
     {
       "id": 103,
-      "url": "/public/assets/images/worker12.jpg",
+      "url": "public/assets/images/worker12.jpg",
       "content": {
         "heading": "Our Vision",
         "list": [
@@ -80,7 +80,7 @@
     },
     {
       "id": 104,
-      "url": "/public/assets/images/worker13.jpg",
+      "url": "public/assets/images/worker13.jpg",
       "content": {
         "heading": "Community Engagement",
         "list": [
@@ -92,7 +92,7 @@
     },
     {
       "id": 104,
-      "url": "/public/assets/images/worker14.jpg",
+      "url": "public/assets/images/worker14.jpg",
       "content": {
         "heading": "Core Values",
         "list": [
@@ -104,7 +104,7 @@
     },
     {
       "id": 105,
-      "url": "/public/assets/images/worker15.jpg",
+      "url": "public/assets/images/worker15.jpg",
       "content": {
         "heading": "Our Vision",
         "list": [
@@ -116,7 +116,7 @@
     },
     {
       "id": 105,
-      "url": "/public/assets/images/worker16.jpg",
+      "url": "public/assets/images/worker16.jpg",
       "content": {
         "heading": "Community Engagement",
         "list": [
