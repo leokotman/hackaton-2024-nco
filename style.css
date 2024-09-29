@@ -816,6 +816,30 @@ h4.slide__content__heading {
   overflow: hidden;
 }
 
+/* services slider */
+#swiper--services .swiper-container {
+  overflow: visible;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services__slider {
+  height: 418px;
+}
+
+.services__slider .content--left {
+  width: 45%;
+  float: left;
+  height: 418px;
+}
+
+.services__slider .content--right {
+  width: 55%;
+  float: right;
+  height: 418px;
+}
+
 /* Swiper ends */
 
 /* Cards Price */
