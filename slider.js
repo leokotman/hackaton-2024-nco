@@ -40,11 +40,22 @@ aboutSlider.innerHTML = allImages.about
   })
   .join('');
 
-export const basicSlider = new Swiper('.swiper--basic', {
+export const projectsBasicSlider = new Swiper('#projectsSlider', {
   modules: [Navigation],
   navigation: {
-    nextEl: '.swiper--basic__navigation .arrow-right',
-    prevEl: '.swiper--basic__navigation .arrow-left',
+    nextEl: '#projectsSliderRight',
+    prevEl: '#projectsSliderLeft',
+  },
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+});
+
+export const aboutBasicSlider = new Swiper('#aboutSlider', {
+  modules: [Navigation],
+  navigation: {
+    nextEl: '#aboutSliderRight',
+    prevEl: '#aboutSliderLeft',
   },
   slidesPerView: 3,
   spaceBetween: 30,
