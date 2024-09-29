@@ -389,6 +389,7 @@ q::after {
 }
 
 /* Hero section */
+
 /* h1 */
 .hero {
   position: relative;
@@ -672,6 +673,92 @@ h4.slide__content__heading {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Testimonial Section */
+
+.testimonial-content {
+  display: flex;
+}
+
+.testimonial-content .section__title {
+  width: 100%;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonial-content p {
+  font-size: 1.6rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-content h4 {
+  font-size: 1.8rem;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.testimonial-content h5 {
+  font-size: 1.4rem;
+  color: #888;
+}
+
+/* Slider Section */
+.testimonial-slider {
+  position: relative; /* Right side for slider */
+  display: flex;
+  gap: 3vw;
+  height: 280px;
+  width: 50%;
+}
+
+.testimonial-slider__main {
+  display: none; /* Hide the main Swiper content as we're showing the text in the left block */
+}
+
+.testimonial-slider__thumbs {
+  width: 100%;
+  height: 280px;
+}
+
+.testimonial-slider__thumbs .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.testimonial-slider__thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+  height: 110px;
+  width: 110px;
+}
+
+.swiper-pagination {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 20%;
+  right: 20px;
+}
+
+/* Moving Triangle */
+.testimonial-triangle {
+  width: 100%;
+  height: 280px;
+  transition: top 0.3s ease;
+  overflow: hidden;
 }
 
 /* Swiper ends */
