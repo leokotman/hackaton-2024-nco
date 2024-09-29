@@ -97,3 +97,26 @@ export const swiperTestimonialMain = new Swiper('.testimonial-slider__main', {
     swiper: swiperTestimonialThumbs, // Link the main slider to the thumbs
   },
 });
+
+export const servicesSwiper = new Swiper('#swiper--services', {
+  spaceBetween: 24,
+  freeMode: true,
+  loop: true,
+  loopedSlides: 8,
+  slidesPerView: 2.3,
+  centeredSlides: true,
+  initialSlide: 3,
+});
+
+const servicesSlider = document.querySelector(
+  '#swiper--services .swiper-wrapper'
+);
+
+servicesSlider.innerHTML = allImages.services
+  .map(image => {
+    return `
+    <div key=${image.id} class="swiper-slide">
+       <img src=${image.url} />
+    </div>`;
+  })
+  .join('');
